@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  lun. 28 avr. 2025 à 23:15
+-- Généré le :  mar. 29 avr. 2025 à 08:21
 -- Version du serveur :  10.1.40-MariaDB
 -- Version de PHP :  7.3.5
 
@@ -52,7 +52,8 @@ INSERT INTO `owners` (`id`, `first_name`, `last_name`) VALUES
 (15, 'Marie', 'Fernadez'),
 (16, 'Marie', 'Fernadez'),
 (17, 'Christian', 'Chambert'),
-(46, 'Paul', 'Durand');
+(46, 'Paul', 'Durand'),
+(47, 'Martin', 'Martin');
 
 -- --------------------------------------------------------
 
@@ -96,7 +97,9 @@ INSERT INTO `properties` (`id`, `owner_id`, `type`, `region`, `city`, `surface`,
 (20, 16, 'Flat', 'Occitanie', 'Béziers', 60, 720, 3, 0),
 (69, 46, 'Flat', 'Occitanie', 'Carcassonne', 100, 1200, 3, 0),
 (70, 46, 'Flat', 'RhoneAlpes', 'Lyon', 50, 650, 1, 0),
-(71, 46, 'House', 'Paca', 'SaintTropez', 100, 1600, NULL, 1);
+(71, 46, 'House', 'Paca', 'SaintTropez', 100, 1600, NULL, 1),
+(72, 47, 'House', 'Occitanie', 'Narbonne', 150, 2100, NULL, 0),
+(73, 47, 'Flat', 'Hérault', 'Béziers', 70, 910, 4, 0);
 
 --
 -- Index pour les tables déchargées
@@ -123,13 +126,13 @@ ALTER TABLE `properties`
 -- AUTO_INCREMENT pour la table `owners`
 --
 ALTER TABLE `owners`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT pour la table `properties`
 --
 ALTER TABLE `properties`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 
 --
 -- Contraintes pour les tables déchargées
